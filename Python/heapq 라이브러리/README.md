@@ -26,3 +26,12 @@ heapq.heappop(h)  # 10 반환
 heapq.heappop(h)  # 30 반환
 heapq.heappop(h)  # 50 반환
 ```
+<br><br>
+
+> ### 리스트 데이터를 한번에 heap 형태로 변환
+```heapq.heapify()``` 메서드를 사용
+```python
+h = [50, 10, 30]
+heapq.heapify(h)
+```
+

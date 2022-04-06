@@ -8,4 +8,4 @@
 
 <br><br>
 > ### 탐색(Search)
-- 
+- [이진 탐색(Binary Search)](./이진%20탐색(Binary%20Search).md)

@@ -46,8 +46,8 @@ def binary_search(arr, search, start, end):  # 재귀 함수를 활용한 ver2
 
 
 arr = [3, 110, 8, 13, 2]
-binary_search(sorted(arr), 7, 0, len(arr))  # False 반환
-binary_search(sorted(arr), 13, 0, len(arr)) # True 반환
+binary_search(sorted(arr), 7, 0, len(arr) - 1)  # False 반환
+binary_search(sorted(arr), 13, 0, len(arr) - 1) # True 반환
 ```  
 <br><br>
 
@@ -86,8 +86,8 @@ def binary_search(arr, search, start, end):  # 반복문 활용한 ver2
 
 
 arr = [3, 110, 8, 13, 2]
-binary_search(sorted(arr), 7, 0, len(arr))  # False 반환
-binary_search(sorted(arr), 13, 0, len(arr))  # True 반환
+binary_search(sorted(arr), 7, 0, len(arr) - 1)  # False 반환
+binary_search(sorted(arr), 13, 0, len(arr) - 1)  # True 반환
 ```  
 <br>
 

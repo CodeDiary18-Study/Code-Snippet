@@ -26,3 +26,7 @@ for idx, ch in enumerate(['가', '나', '다'], start=1):
 # 2 나
 # 3 다
 ```
+<br><br><br>
+
+---
+### More Info : [CLICK ME](https://computer-science-student.tistory.com/583)

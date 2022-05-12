@@ -6,4 +6,8 @@
 ## [combinations](./combinations.md)
 - 조합 : ```combinations(iterable, r)```
 - 중복 조합 : ```combinations_with_replacement(iterable, r)```
+<br>
+
+## [permutations](./permutations.md)
+- 순열 : ```permutations(iterable, r=None)```
 

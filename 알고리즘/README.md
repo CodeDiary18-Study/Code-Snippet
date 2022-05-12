@@ -13,3 +13,7 @@
 - [이진 탐색(Binary Search)](./이진%20탐색(Binary%20Search).md)
 - [깊이 우선 탐색(DFS)](./DFS.md)
 - [너비 우선 탐색(BFS)](./BFS.md)
+
+<br><br>
+> ### 최단 경로(Shortest Path)
+- [다익스트라(Dijkstra)](./다익스트라(Dijkstra).md)

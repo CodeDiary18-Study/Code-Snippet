@@ -10,4 +10,7 @@
 
 ## [permutations](./permutations.md)
 - 순열 : ```permutations(iterable, r=None)```
+<br>
 
+## [product](./product.md)
+- 중복 순열 및 곱집합 : ```product(iterable1, iterable2, ..., [repeat=1])```

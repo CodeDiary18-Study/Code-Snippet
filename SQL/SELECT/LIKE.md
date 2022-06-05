@@ -33,6 +33,13 @@ SELECT *
 FROM TEST
 WHERE NAME LIKE '_디%';
 ```
+```sql
+# 특정 단어가 없는 데이터를 검색해야 하는 경우
+# '아'로 시작하지 않는 데이터 검색
+SELECT *
+FROM TEST
+WHERE NAME NOT LIKE '아%';
+```
 
 <br><br>
 > ### 출처

@@ -1,6 +1,7 @@
 # Ranking(순위)
 - [RANK](#RANK)
 - [DENSE_RANK](#DENSE_RANK)
+- [ROW_NUMBER](#ROW_NUMBER)
 
 <br><br>
 
@@ -31,6 +32,21 @@ DENSE_RANK() OVER([PARTITION BY 컬럼명1] ORDER BY 컬럼명2 [DESC])
 - Example
   ```sql
   SELECT NAME, SCORE, DENSE_RANK() OVER (ORDER BY SCORE DESC) AS RANK
+  FROM TEST;
+  ```
+
+<br><br><br>
+
+## ROW_NUMBER
+```sql
+ROW_NUMBER() OVER([PARTITION BY 컬럼명1] ORDER BY 컬럼명2 [DESC])
+```
+- 같은 점수여도 공동 순위 신경쓰지 않음
+- ```ORDER BY``` 뒤의 조건들을 기준으로 정렬 후 순위 매김
+- ```PARTITION BY```는 그룹별(ex.. 부서별, 학급별)로 각각 순위를 매기고 싶을 때 사용하면 됨
+- Example
+  ```sql
+  SELECT NAME, SCORE, ROW_NUMBER() OVER (ORDER BY SCORE DESC) AS RANK
   FROM TEST;
   ```
 

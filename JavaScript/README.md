@@ -5,3 +5,4 @@
 <br><br>
 > ### 출처
 - https://opentutorials.org/course/48
+- https://ko.javascript.info/

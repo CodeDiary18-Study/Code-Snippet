@@ -14,4 +14,19 @@ docker-compose up -d
 docker exec -it broker /bin/bash
 ```
 
+### 토픽 생성/조회
+```bash
+# 토픽 생성(default partition 1, replication-factor 1)
+kafka-topics --create --topic my-topic --bootstrap-server broker:29092 
+
+# 토픽 목록 보기
+kafka-topics --list --bootstrap-server broker:29092
+
+# 토픽 상세 정보 보기
+kafka-topics --describe --topic my-topic --bootstrap-server broker:29092
+
+# 토픽 삭제
+kafka-topics --delete --topic my-topic --bootstrap-server broker:29092
+```
+
 <br>

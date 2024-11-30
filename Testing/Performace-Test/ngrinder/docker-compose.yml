@@ -1,0 +1,23 @@
+services:
+  controller:
+    container_name: controller
+    build:
+      context: ./ngrinder-controller
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "12000-12009:12000-12009"
+      - "16001:16001"
+    networks:
+      - ngrinder
+  agent:
+    depends_on:
+      - controller
+    build:
+      context: ./ngrinder-agent
+      dockerfile: Dockerfile
+    networks:
+      - ngrinder
+networks:
+  ngrinder:
+    driver: bridge

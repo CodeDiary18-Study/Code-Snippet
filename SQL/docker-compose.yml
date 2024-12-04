@@ -1,0 +1,23 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: mysql_server
+    ports:
+      - 3306:3306
+    networks:
+      - infra_network
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    command:
+      - '--character-set-server=utf8mb4'
+      - '--collation-server=utf8mb4_unicode_ci'
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: pw@1234
+
+
+networks:
+  infra_network: # 다른 컨테이너와 통신을 위한 네트워크
+    name: infra_network
